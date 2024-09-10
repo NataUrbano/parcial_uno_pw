@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario</title>
+    <link rel="stylesheet" href="menu_sobre_nosotros.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nombre de la Empresa</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Vehículos</a></li>
+                <li><a href="#">Test Drive</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Buscar..." oninput="searchCar()">
+    </header>
+
+    <section id="concesionario">
+        <h2>Toyota</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="image">Imagen</div>
+                <div class="info">
+                    <h3>Carro 1</h3>
+                    <p>Descripción corta del Carro 1</p>
+                    <button onclick="openModal('Carro 1')">Go</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">Imagen</div>
+                <div class="info">
+                    <h3>Carro 2</h3>
+                    <p>Descripción corta del Carro 2</p>
+                    <button onclick="openModal('Carro 2')">Go</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">Imagen</div>
+                <div class="info">
+                    <h3>Carro 3</h3>
+                    <p>Descripción corta del Carro 3</p>
+                    <button onclick="openModal('Carro 3')">Go</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-info">Aquí va la ficha técnica del vehículo.</p>
+        </div>
+    </div>
+    <section id="concesionario"></section>
+        <h2>RENAULT</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="image">Imagen</div>
+                <div class="info">
+                    <h3>Carro 1</h3>
+                    <p>Descripción corta del Carro 1</p>
+                    <button onclick="openModal('Carro 1')">Go</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">Imagen</div>
+                <div class="info">
+                    <h3>Carro 2</h3>
+                    <p>Descripción corta del Carro 2</p>
+                    <button onclick="openModal('Carro 2')">Go</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">Imagen</div>
+                <div class="info">
+                    <h3>Carro 3</h3>
+                    <p>Descripción corta del Carro 3</p>
+                    <button onclick="openModal('Carro 3')">Go</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-info">Aquí va la ficha técnica del vehículo.</p>
+        </div>
+    </div>
+
+    <script src="menu_sobre_nosotros.js"></script>
+</body>
+</html>

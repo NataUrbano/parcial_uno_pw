@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Vehículos</title>
+    <link rel="stylesheet" href="MenúTestDrive.css" type="text/css" >
+</head>
+<body>
+<header>
+    <h1>Concesionario de Vehículos</h1>    
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../veiculos/veiculos.html">Vehículos</a></li>
+            <li><a href="#testdrive">Test Drive</a></li>
+            <li><a href="../menu sobre nosotros/menu_sobre_nosotros.html">Sobre Nosotros</a></li>                    
+        </ul>
+    </nav>
+</section>
+    <h2>Ingrese los datos para registrarse</h2>
+    <form>
+        <div class="form-group">
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+
+        <div class="form-group">
+            <label for="estrato">Estrato</label>
+            <input type="number" id="estrato" name="estrato" value="5" min="1" max="6">
+            <label for="fecha-nacimiento">Fecha Nacimiento</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="2016-05-12">
+        </div>
+
+        <div class="form-group">
+            <label for="grupo-sanguineo">Grupo Sanguíneo</label>
+            <select id="grupo-sanguineo" name="grupo-sanguineo">
+                <option value="" disabled selected>Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Género</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+        </div>
+
+        <div class="form-group">
+            <label>Actividades Favoritas</label>
+            <input type="checkbox" id="futbol" name="actividades" value="futbol">
+            <label for="futbol">Futbol</label>
+            <input type="checkbox" id="baloncesto" name="actividades" value="baloncesto">
+            <label for="baloncesto">Baloncesto</label>
+            <input type="checkbox" id="voleibol" name="actividades" value="voleibol">
+            <label for="voleibol">Voleibol</label>
+            <input type="checkbox" id="ciclismo" name="actividades" value="ciclismo">
+            <label for="ciclismo">Ciclismo</label>
+        </div>
+
+        <div class="form-group buttons">
+            <button type="submit" class="btn-register">Registrar</button>
+            <button type="button" class="btn-cancel">Cancelar</button>
+        </div>
+    </form>
+    <script src="MenúTestDrive.js"></script>
+</body>
+</html>

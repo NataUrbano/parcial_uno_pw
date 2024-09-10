@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Vehículos</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+<header>
+    <h1>Concesionario de Vehículos</h1>    
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="/menu veiculos/veiculos.html">Vehículos</a></li>
+            <li><a href="/Menú Test Drive/MenúTestDrive.html">Test Drive</a></li>
+            <li><a href="/menu sobre nosotros/menu_sobre_nosotros.html">Sobre Nosotros</a></li>                    
+        </ul>
+    </nav>
+</section>
+
+<!-- Imagenes de veiculos -->
+<section class="carousel">
+    <div class="slide active">
+        <img src="/imagenes/1lc300-1623311809.jpg" alt="Vehículo 1">
+        <p>Vehículo 1</p>
+    </div>
+    <div class="slide">
+        <img src="/imagenes/carro_tres.jpg" alt="Vehículo 2">
+        <p>Vehículo 2</p>
+    </div>
+    <div class="slide">
+        <img src="/imagenes/carro_dos.jpg" alt="Vehículo 3">
+        <p>Vehículo 3</p>
+    </div>
+    <div class="slide">
+        <img src="/imagenes/carro_cuatro.webp" alt="Vehículo 4">
+        <p>Vehículo 4</p>
+    </div>
+    <div class="slide">
+        <img src="/imagenes/carro_seis.webp" alt="Vehículo 5">
+        <p>Vehículo 5</p>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+    <div class="dots">
+        <span class="dot active" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+        <span class="dot" onclick="showSlide(3)"></span>
+        <span class="dot" onclick="showSlide(4)"></span>
+        <span class="dot" onclick="showSlide(5)"></span>
+    </div>
+</section>
+
+<!-- Mapa con información de las oficinas -->
+<section class="locations">
+    <h2>Ubicaciones de Oficinas</h2>
+    <div class="locations-content">
+        <div class="office-info">
+            <h3>Sede Principal</h3>
+            <p>Dirección: Calle Principal 123</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Horario: Lunes a Viernes de 9 AM a 6 PM</p>
+            <p>Encargado: Juan Pérez</p>
+        </div>
+        <div class="office-info">
+            <h3>Sede Norte</h3>
+            <p>Dirección: Avenida Norte 456</p>
+            <p>Teléfono: (987) 654-3210</p>
+            <p>Horario: Lunes a Sábado de 10 AM a 7 PM</p>
+            <p>Encargado: María Gómez</p>
+        </div>
+        <div class="office-info">
+            <h3>Sede Sur</h3>
+            <p>Dirección: Calle Sur 789</p>
+            <p>Teléfono: (555) 123-9876</p>
+            <p>Horario: Lunes a Viernes de 8 AM a 5 PM</p>
+            <p>Encargado: Carlos Fernández</p>
+        </div>
+    </div>
+    <div class="map">
+        <img src="/imagenes/Captura de pantalla 2024-09-10 091627.png" alt="Mapa de las Sedes">
+    </div>
+</section>
+
+<script src="codigo.js"></script>
+</body>
+</html>
